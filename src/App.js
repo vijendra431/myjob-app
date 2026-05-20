@@ -6,6 +6,7 @@ import Jobs from './components/Jobs'
 import JobDetail from './components/JobDetail'
 import NotFound from './components/NotFound'
 import ProtectedRoute from './components/ProtectedRoute'
+import './responsive.css'
 
 import './App.css'
 
