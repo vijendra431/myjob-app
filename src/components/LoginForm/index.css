@@ -169,11 +169,12 @@
   color: green;
   font-weight: bold;
   font-family: Arial, sans-serif;
-  padding: 20px;
+  padding:2px;
   font-size:12px;
 }
 
 .demo1{
   color:red;
+  padding-top:10px;
   
 }
