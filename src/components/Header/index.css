@@ -1,0 +1,106 @@
+/* ── HEADER / NAVBAR ── */
+
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 40px;
+  height: 70px;
+  background: rgba(22, 22, 37, 0.85);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border-bottom: 1px solid rgba(99, 102, 241, 0.2);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.4);
+  animation: slideDown 0.4s ease;
+}
+
+/* Logo */
+.logo {
+  font-size: 26px;
+  font-weight: 900;
+  letter-spacing: -1px;
+  background: linear-gradient(135deg, #6366f1, #a855f7);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  transition: transform 0.3s ease;
+}
+
+.logo:hover {
+  transform: scale(1.05);
+}
+
+.logo span {
+  background: linear-gradient(135deg, #f472b6, #fb923c);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Nav links */
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.nav-link {
+  position: relative;
+  padding: 8px 18px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #a1a1b5;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  letter-spacing: 0.3px;
+}
+
+.nav-link::after {
+  content: '';
+  position: absolute;
+  bottom: 4px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0;
+  height: 2px;
+  background: linear-gradient(90deg, #6366f1, #a855f7);
+  border-radius: 2px;
+  transition: width 0.3s ease;
+}
+
+.nav-link:hover {
+  color: #ffffff;
+  background: rgba(99, 102, 241, 0.1);
+}
+
+.nav-link:hover::after {
+  width: 60%;
+}
+
+/* Logout button */
+.logout-btn {
+  padding: 8px 20px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #ffffff;
+  background: linear-gradient(135deg, #ef4444, #dc2626);
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(239, 68, 68, 0.3);
+  letter-spacing: 0.3px;
+}
+
+.logout-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(239, 68, 68, 0.5);
+  background: linear-gradient(135deg, #dc2626, #b91c1c);
+}
+
+.logout-btn:active {
+  transform: translateY(0);
+}
