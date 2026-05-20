@@ -124,7 +124,7 @@ class LoginForm extends Component {
             <button type="submit" className="login-btn">
               Login
             </button>
-            <p className='demo'>Demo:- username:rahul,password:rahul@2021</p>
+            <p className='demo'>Demo:- username:rahul,  password:rahul@2021</p>
           </form>
         </div>
       </div>
